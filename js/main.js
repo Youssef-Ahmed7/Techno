@@ -1,18 +1,25 @@
 // starting nav section 
 let navIcon = document.querySelector("  .home .container .content i");
+
 let nav = document.querySelector("nav");
 let navUl = document.querySelector("nav ul");
 let ulIcon = document.querySelector("nav ul i");
 let header = document.querySelector("header.navHeader");
 // icon section 
 let icons = document.querySelectorAll(" .home>i");
+let Iwant = document.querySelector(".home .landing .slider");
 let homeSection = document.querySelector(".home .landing");
-homeSection.addEventListener("mouseover" , ()=>{
+icons.forEach((e)=>{
+     e.addEventListener("mouseover" , ()=>{
+          e.style.display = "block";
+     })
+})
+Iwant.addEventListener("mouseover" , ()=>{
      icons.forEach((e)=>{
           e.style.display = "block";
      })
 })
-homeSection.addEventListener("mouseout" , ()=>{
+Iwant.addEventListener("mouseout" , ()=>{
      icons.forEach((e)=>{
           e.style.display = "none";
      })
